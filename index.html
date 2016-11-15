@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>Серия видео по трейдингу</title>
     <meta name="author" contant="">
     <meta name="description" content="">
@@ -13,9 +13,30 @@
     <link rel="shortcut icon" href="/img/favicon.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
+
+    <script type="text/javascript">
+        VK.init({
+            apiId: 5107581,
+            onlyWidgets: false
+        });
+    </script>
 </head>
 
 <body>
+    <!--ФБ скрипт служебный-->
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!--Основаной контент-->
     <section class="main_content">
         <!--Шапка-->
@@ -38,22 +59,54 @@
             </div>
         </div>
         <!--Ряд видосов-->
-        <section class="vidos">
+        <section class="videos">
+            <!--
             <div class="container">
+                <div class="desktop"></div>
+            </div>
+-->
+            <div class="container">
+
+                <figure>
+                    <figcaption>Урок 2</figcaption>
+                    <img src="/img/preveiw.jpg" alt="Превью следующего видео">
+                </figure>
+                <figure>
+                    <figcaption>Урок 3</figcaption>
+                    <img src="/img/preveiw.jpg" alt="Превью следующего видео">
+                </figure>
+                <figure>
+                    <figcaption>Урок 4</figcaption>
+                    <img src="/img/preveiw.jpg" alt="Превью следующего видео">
+                </figure>
 
             </div>
         </section>
     </section>
     <!--Комменты-->
     <section class="commints">
+       <h3>Пишите Ваши комментарии</h3>
         <div class="container">
-
+            <div class="vk">
+                <!-- Put this div tag to the place, where the Comments block will be -->
+                <div id="vk_comments"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Comments("vk_comments", {
+                        limit: 5,
+                        width: "400",
+                        attach: "*"
+                    });
+                </script>
+            </div>
+            <div class="fb">
+                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="400" data-numposts="1"></div>
+            </div>
         </div>
     </section>
     <!--Подвал-->
     <footer class="footer">
         <div class="container">
-            <p>&copy Все права защищены | <a href="http://www.brokerskydom.ru" target="_blank">&laquo;Брокерский дом&raquo;</a> | Челябинск | 2016г.</p>
+            <p>&copy; Все права защищены | <a href="http://www.brokerskydom.ru" target="_blank">&laquo;Брокерский дом&raquo;</a> | Челябинск | 2016г.</p>
         </div>
     </footer>
 </body>
