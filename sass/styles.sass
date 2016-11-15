@@ -145,8 +145,162 @@ body
     margin: 0
     padding: 0
 
-    
+*:before,
+*:after 
+    content: ""
+
+
+.container
+    width: 960px
+    max-width: 960px
+    margin-left: auto
+    margin-right: auto
+
+.clf 
+    clear: both
+
+/* Стили шапки  
+
 .header 
     width: 100%
     min-height: 100px
-    background-color: #1C9EAB
+    background-color: rgba(#1C9EAB, 0.92)
+
+//.logo 
+//    position: relative
+.logo
+    width: 180px;
+    height: 100px;
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    -webkit-display: flex
+    -moz-display: flex
+    -ms-display: flex
+    -o-display: flex
+    display: flex
+    align-items: center
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    justify-content: center
+    align-items: center;
+    float: left
+
+.name    
+    float: left
+    margin-left: 20px
+    padding-top: 17px
+    h1,
+    h2
+        font-family: 'Russo One', sans-serif;
+        color: #fff
+    h1
+        font-size: 33px
+        position: relative
+        padding-bottom: 5px;
+        
+        &:after
+            width: 500px;
+            height: 2px;
+            border-radius: 20px;
+            background-color: #fff;
+            margin: 10px auto;
+            position: absolute;
+            bottom: -11px;
+            left: 0px;
+    h2
+        font-size: 20px
+        padding-top: 5px;
+/* Стили основного блока 
+
+.main_content 
+    position: relative 
+    background-image: url(/img/back_2.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    width: 100%
+    top: 0
+    left: 0
+    height: auto
+    padding-bottom: 20px
+    &:before
+        position: absolute
+        top: 100px
+        left: 0
+        background-color: rgba(#fff, 0.4)
+        height: calc(100% - 100px)
+        width: 100%
+    
+.height_up 
+    height: 100px
+    width: 100%
+    
+.jumbo
+    height: auto;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 20px solid rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    padding: 20px
+        
+    h3
+        font-size: 30px
+        text-align: center
+        font-weight: bold
+        margin-top:10px
+        margin-bottom: 10px
+    h4
+        font-size: 24px
+        text-align: center
+        font-weight: bolder
+        margin-top:10px
+        margin-bottom: 10px
+    iframe
+        display: block
+        position: relative
+        width: 560px
+        height: 350px
+        margin: 20px auto
+        box-shadow: 0 0 0 1px #000 ,0 5px 10px grey
+        
+/* Стили ряда видосов
+
+/* Стили комментов
+
+/* Стили подвала
+
+.footer
+    background-color: #2A2A2C
+    height: 50px
+    width: 100%
+    .container 
+        height: inherit
+        p
+            color: #aaa
+            text-align: center
+            font-size: 14px
+            display: -webkit-flex
+            display: -moz-flex
+            display: -ms-flex
+            display: -o-flex
+            -webkit-display: flex
+            -moz-display: flex
+            -ms-display: flex
+            -o-display: flex
+            display: flex
+            -webkit-justify-content: center
+            -moz-justify-content: center
+            -ms-justify-content: center
+            -o-justify-content: center
+            justify-content: center
+            -ms-align-items: center
+            align-items: center
+            height: inherit
+            a 
+                color: #1C9EAB
+                text-decoration: none
+                &:hover
+                    text-decoration: underline
