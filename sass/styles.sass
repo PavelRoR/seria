@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video 
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    margin: 0
+    padding: 0
+    border: 0
+    font-size: 100%
+    font: inherit
+    vertical-align: baseline
     
 
 article,
@@ -98,39 +98,39 @@ hgroup,
 menu,
 nav,
 section 
-    display: block;
+    display: block
     
 
 body 
-    line-height: 1;
+    line-height: 1
     font-family: 'Open Sans', san-serif
     
 
 ol,
 ul 
-    list-style: none;
+    list-style: none
     
 
 blockquote,
 q 
-    quotes: none;
+    quotes: none
     
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after 
-    content: '';
-    content: none;
+    content: ''
+    content: none
 
 
 table 
-    border-collapse: collapse;
-    border-spacing: 0;
+    border-collapse: collapse
+    border-spacing: 0
     
 
 body 
-    -webkit-text-size-adjust: none;
+    -webkit-text-size-adjust: none
     
 
 
@@ -139,9 +139,9 @@ body
 *,
 *:before,
 *:after 
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
     margin: 0
     padding: 0
 
@@ -164,13 +164,13 @@ body
 .header 
     width: 100%
     min-height: 100px
-    background-color: rgba(#1C9EAB, 0.92)
+    background-color: rgba(#1C9EAB, 1)
 
 //.logo 
 //    position: relative
 .logo
-    width: 180px;
-    height: 100px;
+    width: 180px
+    height: 100px
     display: -webkit-flex
     display: -moz-flex
     display: -ms-flex
@@ -186,7 +186,7 @@ body
     -ms-justify-content: center
     -o-justify-content: center
     justify-content: center
-    align-items: center;
+    align-items: center
     float: left
 
 .name    
@@ -195,30 +195,30 @@ body
     padding-top: 17px
     h1,
     h2
-        font-family: 'Russo One', sans-serif;
+        font-family: 'Russo One', sans-serif
         color: #fff
     h1
         font-size: 33px
         position: relative
-        padding-bottom: 5px;
+        padding-bottom: 5px
         
         &:after
-            width: 500px;
-            height: 2px;
-            border-radius: 20px;
-            background-color: #fff;
-            margin: 10px auto;
-            position: absolute;
-            bottom: -11px;
-            left: 0px;
+            width: 500px
+            height: 2px
+            border-radius: 20px
+            background-color: #fff
+            margin: 10px auto
+            position: absolute
+            bottom: -11px
+            left: 0px
     h2
         font-size: 20px
-        padding-top: 5px;
+        padding-top: 5px
 /* Стили основного блока 
 
 .main_content 
     position: relative 
-    background-image: url(/img/back_2.jpg)
+    background-image: url(../img/back_2.jpg)
     background-size: cover
     background-repeat: no-repeat
     width: 100%
@@ -226,24 +226,24 @@ body
     left: 0
     height: auto
     padding-bottom: 90px
-    &:before
-        position: absolute
-        top: 100px
-        left: 0
-        background-color: rgba(#fff, 0.4)
-        height: calc(100% - 100px)
-        width: 100%
+//    &:before
+//        position: absolute
+//        top: 100px
+//        left: 0
+//        background-color: transparent
+//        height: calc(100% - 100px)
+//        width: 100%
     
 .height_up 
     height: 100px
     width: 100%
     
 .jumbo
-    height: auto;
-    margin: 20px auto 45px;
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 20px solid rgba(255, 255, 255, 0.5);
-    background-clip: padding-box;
+    height: auto
+    margin: 20px auto 45px
+    background-color: rgba(255, 255, 255, 0.92)
+    border: 20px solid rgba(255, 255, 255, 0.5)
+    background-clip: padding-box
     padding: 20px
         
     h3
@@ -297,6 +297,13 @@ body
             cursor: pointer
             border: 2px solid #fff
             outline: 1px solid #000
+            position: relative
+            &:after 
+                content: 'Урок пока недоступен'
+                position: absolute
+                width: inherit
+                height: inherit
+                background-color: rgba(#fff,.85)
         figure
             position: relative
             -webkit-transition: all .5s ease-in
@@ -314,14 +321,16 @@ body
             
         figcaption
             text-align: center
+            position: relative
+            top: -8px
             
         &:before
             width: inherit
             height: 70px
-            background-image: url(/img/7.png)
-            background-size: 85px 69px;
-            background-position: center;
-            background-repeat: repeat-x;
+            background-image: url(../img/7.png)
+            background-size: 85px 69px
+            background-position: center
+            background-repeat: repeat-x
             position: absolute
             top: 90px
             left: 0
@@ -330,9 +339,9 @@ body
             -ms-transform: rotateX(5deg)
             -o-transform: rotateX(5deg)
             transform: rotateX(5deg)
-            left: 0;
-            z-index: -1;
-            box-shadow: 0 5px 4px grey, 2px 5px 4px grey,-2px 5px 4px grey;    
+            left: 0
+            z-index: -1
+            box-shadow: 0 5px 4px grey, 2px 5px 4px grey,-2px 5px 4px grey    
     
 
     
@@ -342,16 +351,16 @@ body
 .commints
     margin-bottom: 20px
     h3
-        font-size: 28px;
-        font-weight: bold;
-        text-align: center;
-        margin: 20px auto -1px;
-        width: 960px;
-        color: #fff;
-        background-color: #ccc;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        padding: 10px;
+        font-size: 28px
+        font-weight: bold
+        text-align: center
+        margin: 20px auto -1px
+        width: 960px
+        color: #fff
+        background-color: #ccc
+        border-top-right-radius: 5px
+        border-top-left-radius: 5px
+        padding: 10px
     .container 
         display: -webkit-flex
         display: -moz-flex
@@ -409,3 +418,80 @@ body
                 text-decoration: none
                 &:hover
                     text-decoration: underline
+.full
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(#000,.8)
+    display:none
+    width: 100%
+    height: 100%
+    z-index: 2
+/* стили модального окна */
+.popup 
+    width: 420px
+    height: auto
+    background-color: #fff
+    border: 3px solid rgba(#000, .6)
+    margin: 100px auto 0
+    position: relative
+    padding: 30px 0;
+/* формируем кнопку закрытия */
+.close 
+    top: -10px
+    right: -10px
+    width: 20px
+    height: 20px
+    position: absolute
+    padding: 0
+    border: 2px solid #ccc
+    -webkit-border-radius: 15px
+    -moz-border-radius: 15px
+    -ms-border-radius: 15px
+    -o-border-radius: 15px
+    border-radius: 15px
+    background-color: rgba(61, 61, 61, 0.8)
+    -webkit-box-shadow: 0px 0px 10px #000
+    -moz-box-shadow: 0px 0px 10px #000
+    box-shadow: 0px 0px 10px #000
+    text-align: center
+    text-decoration: none
+    font: 13px/20px 'Tahoma', Arial, sans-serif
+    font-weight: bold
+    -webkit-transition: all ease .8s
+    -moz-transition: all ease .8s
+    -ms-transition: all ease .8s
+    -o-transition: all ease .8s
+    transition: all ease .8s                        
+                    
+    &:before 
+        color: rgba(255, 255, 255, 0.9)
+        content: "X"
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.9)
+        font-size: 12px
+                    
+    &:hover 
+        background-color: rgba(252, 20, 0, 0.8)
+        -webkit-transform: rotate(360deg)
+        -moz-transform: rotate(360deg)
+        -ms-transform: rotate(360deg)
+        -o-transform: rotate(360deg)
+        transform: rotate(360deg)
+    
+.subscr 
+    z-index: 9999999999999
+    cursor: pointer
+    display: block
+    text-align: center
+    text-decoration: navajowhite
+    color: #fff
+    background-color: #DE0000
+    border-radius: 3px
+    padding: 15px 10px
+    width: 290px
+    margin: 10px auto
+    font-weight: bold
+    box-shadow: 0 4px 0 #AF0000
+    border: none
+    &:focus .full
+        display: block

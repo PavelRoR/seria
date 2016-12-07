@@ -165,7 +165,7 @@ body {
 .header {
   width: 100%;
   min-height: 100px;
-  background-color: rgba(28, 158, 171, 0.92);
+  background-color: #1c9eab;
 }
 
 .logo {
@@ -227,7 +227,7 @@ body {
 /* Стили основного блока */
 .main_content {
   position: relative;
-  background-image: url(/img/back_2.jpg);
+  background-image: url(../img/back_2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -235,15 +235,6 @@ body {
   left: 0;
   height: auto;
   padding-bottom: 90px;
-}
-
-.main_content:before {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.4);
-  height: calc(100% - 100px);
-  width: 100%;
 }
 
 .height_up {
@@ -254,7 +245,7 @@ body {
 .jumbo {
   height: auto;
   margin: 20px auto 45px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.92);
   border: 20px solid rgba(255, 255, 255, 0.5);
   background-clip: padding-box;
   padding: 20px;
@@ -316,6 +307,15 @@ body {
   cursor: pointer;
   border: 2px solid #fff;
   outline: 1px solid #000;
+  position: relative;
+}
+
+.videos .container img:after {
+  content: 'Урок пока недоступен';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .videos .container figure {
@@ -338,12 +338,14 @@ body {
 
 .videos .container figcaption {
   text-align: center;
+  position: relative;
+  top: -8px;
 }
 
 .videos .container:before {
   width: inherit;
   height: 70px;
-  background-image: url(/img/7.png);
+  background-image: url(../img/7.png);
   background-size: 85px 69px;
   background-position: center;
   background-repeat: repeat-x;
@@ -445,4 +447,92 @@ body {
 
 .footer .container p a:hover {
   text-decoration: underline;
+}
+
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* стили модального окна */
+.popup {
+  width: 420px;
+  height: auto;
+  background-color: #fff;
+  border: 3px solid rgba(0, 0, 0, 0.6);
+  margin: 100px auto 0;
+  position: relative;
+  padding: 30px 0;
+}
+
+/* формируем кнопку закрытия */
+.close {
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  padding: 0;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(61, 61, 61, 0.8);
+  -webkit-box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #000;
+  text-align: center;
+  text-decoration: none;
+  font: 13px/20px "Tahoma", Arial, sans-serif;
+  font-weight: bold;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.close:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: "X";
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+}
+
+.close:hover {
+  background-color: rgba(252, 20, 0, 0.8);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.subscr {
+  z-index: 9999999999999;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: navajowhite;
+  color: #fff;
+  background-color: #DE0000;
+  border-radius: 3px;
+  padding: 15px 10px;
+  width: 290px;
+  margin: 10px auto;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #AF0000;
+  border: none;
+}
+
+.subscr:focus .full {
+  display: block;
 }
