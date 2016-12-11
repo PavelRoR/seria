@@ -159,12 +159,12 @@ body
 .clf 
     clear: both
 
-/* Стили шапки  
+/* Стили шапки  */
 
 .header 
     width: 100%
     min-height: 100px
-    background-color: rgba(#1C9EAB, 1)
+    background-color: rgba(#000862, 1)
 
 //.logo 
 //    position: relative
@@ -193,6 +193,7 @@ body
     float: left
     margin-left: 20px
     padding-top: 17px
+    width: 78%
     h1,
     h2
         font-family: 'Russo One', sans-serif
@@ -202,35 +203,36 @@ body
         position: relative
         padding-bottom: 5px
         
-        &:after
-            width: 500px
-            height: 2px
-            border-radius: 20px
-            background-color: #fff
-            margin: 10px auto
-            position: absolute
-            bottom: -11px
-            left: 0px
+//        &:after
+//            width: 500px
+//            height: 2px
+//            border-radius: 20px
+//            background-color: #fff
+//            margin: 10px auto
+//            position: absolute
+//            bottom: -11px
+//            left: 0px
     h2
         font-size: 20px
         padding-top: 5px
-/* Стили основного блока 
+/* Стили основного блока  */
 
 .main_content 
     position: relative 
-    background-image: url(../img/back_2.jpg)
+    background-image: url(../img/1.jpg)
     background-size: cover
     background-repeat: no-repeat
     width: 100%
     top: 0
     left: 0
     height: auto
+    padding-top: 10px
     padding-bottom: 90px
-//    &:before
+//    &:after
 //        position: absolute
-//        top: 100px
+//        top: 0
 //        left: 0
-//        background-color: transparent
+//        background-color: rgba(#fff,.4)
 //        height: calc(100% - 100px)
 //        width: 100%
     
@@ -245,18 +247,19 @@ body
     border: 20px solid rgba(255, 255, 255, 0.5)
     background-clip: padding-box
     padding: 20px
+    width: 70%
         
     h3
         font-size: 30px
         text-align: center
         font-weight: bold
-        margin-top:10px
+        margin-top: 10px
         margin-bottom: 10px
     h4
         font-size: 24px
         text-align: center
         font-weight: bolder
-        margin-top:10px
+        margin-top: 10px
         margin-bottom: 10px
     iframe
         display: block
@@ -267,7 +270,7 @@ body
         border: 3px solid #fff
         box-shadow: 0 0 0 1px #000 ,0 5px 10px grey
         
-/* Стили ряда видосов
+/* Стили ряда видосов */
 
 .videos
     .container 
@@ -334,7 +337,7 @@ body
             position: absolute
             top: 90px
             left: 0
-            border-radius:5px
+            border-radius: 5px
             -webkit-transform: rotateX(5deg)
             -ms-transform: rotateX(5deg)
             -o-transform: rotateX(5deg)
@@ -346,7 +349,7 @@ body
 
     
     
-/* Стили комментов
+/* Стили комментов */
 
 .commints
     margin-bottom: 20px
@@ -383,8 +386,12 @@ body
 .vk,
 .fb 
     margin: 10px 30px
-    
-/* Стили подвала
+#vk_comments,
+.fb-comments, 
+.fb-comments span,
+.fb-comments span iframe 
+        width: 400px !important  
+/* Стили подвала */
 
 .footer
     background-color: #2A2A2C
@@ -435,7 +442,7 @@ body
     border: 3px solid rgba(#000, .6)
     margin: 100px auto 0
     position: relative
-    padding: 30px 0;
+    padding: 30px 0
 /* формируем кнопку закрытия */
 .close 
     top: -10px
@@ -495,3 +502,217 @@ body
     border: none
     &:focus .full
         display: block
+.darked 
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    -webkit-display: flex
+    -moz-display: flex
+    -ms-display: flex
+    -o-display: flex
+    display: flex
+    position: absolute
+    width: 198px
+    height: 108px
+    background-color: rgba(0,0,0,.6)
+    color: #fff
+    top: 10px
+    left: 19px
+    -ms-align-items: center
+    align-items: center
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    justify-content: center
+
+
+/* Экран 768px */
+@media screen and (max-width: 768px) 
+    .container
+        width: 748px
+    .name
+        padding-top: 28px
+        width: 72%
+    .name h1
+        font-size: 24px
+    .jumbo
+        width: 80%
+    .jumbo iframe 
+        width: 80%
+        height: 270px
+    .videos .container::before 
+        width: 700px
+        left: 22px
+    .videos .container img
+        width: 150px
+    .darked
+        width: 150px
+        text-align: center
+    .videos .container figure::after
+        width: 155px
+    .commints h3
+        font-size: 25px
+        width: 748px
+    .commints
+        position: relative
+        left: -5px
+    #vk_comments,
+    .fb-comments, 
+    .fb-comments span,
+    .fb-comments span iframe 
+        width: 320px !important 
+
+/* Эран 640px */
+@media screen and (max-width: 640px) 
+    .container,
+    .commints h3 
+        width: 620px
+    .jumbo h3
+        font-size: 25px
+    .jumbo h4
+        font-size: 22px
+    .name
+        padding-top: 28px
+        width: 72%
+    .name h1
+        font-size: 19px
+    .jumbo iframe 
+        width: 80%
+        height: 270px
+    .videos .container::before 
+        width: 570px
+        left: 22px
+    .videos .container img,
+    .logo
+        width: 150px
+    .darked
+        width: 150px
+        text-align: center
+    #vk_comments,
+    .fb-comments, 
+    .fb-comments span,
+    .fb-comments span iframe 
+        width: 270px !important
+    .popup
+        margin-top: 10px
+
+/* Эран 480px */
+@media screen and (max-width: 480px) 
+    .container,
+    .commints h3 
+        width: 460px
+    .jumbo
+        margin-bottom: 15px
+    .jumbo h3
+        font-size: 22px
+    .jumbo h4
+        font-size: 19px
+    .name
+        padding-top: 23px
+        width: 66%
+    .name h1
+        font-size: 18px
+    .jumbo iframe 
+        width: 90%
+        height: 170px
+    .videos .container::before 
+        width: 440px
+        left: 7px
+    .videos .container img,
+    .logo
+        width: 130px
+    .videos .container img
+        margin: 10px 7px
+    .videos .container figure::after 
+        width: 131px
+        left: 7px
+    .darked
+        width: 130px
+        left: 6px
+    .commints .container
+        display: block
+    #vk_comments,
+    .fb-comments, 
+    .fb-comments span,
+    .fb-comments span iframe 
+        width: 400px !important
+        margin: 0 auto !important
+    .footer .container p
+        font-size: 12px
+
+/* Эран 360px */
+@media screen and (max-width: 360px) 
+    .main_content
+        padding-bottom: 10px
+    .container,
+    .commints h3 
+        width: 300px
+    .logo
+        float: none
+        margin: 0 auto
+        width: 200px
+    .jumbo
+        width: 90%
+    .jumbo h3
+        font-size: 22px
+    .jumbo h4
+        font-size: 19px
+    .name
+        float: none
+        width: 100%
+        padding: 10px 0
+        text-align: center
+        margin-left: 0
+    .name h1
+        font-size: 18px
+    .jumbo iframe 
+        width: 100%
+        height: 170px
+    .subscr
+        width: 90%
+        font-size: .6rem;
+        line-height: 1.5
+    .popup
+        width: 275px
+    #085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e
+        width: 250px !important
+    .085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e_email,
+    #button085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e
+        width: 240px !important
+    .videos .container
+        display: block
+        height: auto
+
+    .videos .container::before 
+        display: none
+    .logo
+        width: 130px
+    .videos .container figure
+        margin-bottom: 30px
+    .videos .container img
+        margin: 10px auto
+        display: block
+        width: 60%
+        height: auto
+    .videos .container figure::after 
+        width: 60%
+        left: 60px
+    .darked
+        width: 182px;
+        left: 59px;
+        top: -1px;
+        height: 102px;
+    .commints h3
+        font-size: 17px
+    .commints .container
+        display: block
+    #vk_comments,
+    .fb-comments, 
+    .fb-comments span,
+    .fb-comments span iframe 
+        width: 240px !important
+        margin: 0 auto !important
+    .footer .container p
+        font-size: 9px
