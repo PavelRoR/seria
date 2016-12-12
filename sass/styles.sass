@@ -430,7 +430,7 @@ body
     top: 0
     left: 0
     background-color: rgba(#000,.8)
-    display:none
+    display: none
     width: 100%
     height: 100%
     z-index: 2
@@ -587,14 +587,18 @@ body
     .videos .container img,
     .logo
         width: 150px
+
     .darked
         width: 150px
         text-align: center
+    .vk, 
+    .fb
+        margin: 10px 0
     #vk_comments,
     .fb-comments, 
     .fb-comments span,
     .fb-comments span iframe 
-        width: 270px !important
+        width: 300px !important
     .popup
         margin-top: 10px
 
@@ -633,6 +637,8 @@ body
         left: 6px
     .commints .container
         display: block
+    .fb
+        margin: 10px 29px
     #vk_comments,
     .fb-comments, 
     .fb-comments span,
@@ -653,6 +659,8 @@ body
         float: none
         margin: 0 auto
         width: 200px
+        height: 60px
+        padding-top: 10px
     .jumbo
         width: 90%
     .jumbo h3
@@ -676,15 +684,9 @@ body
         line-height: 1.5
     .popup
         width: 275px
-    #085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e
-        width: 250px !important
-    .085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e_email,
-    #button085af45c843d791a834db0592ce2e01672bcd57d8647b693e92133b2d625b36e
-        width: 240px !important
     .videos .container
         display: block
         height: auto
-
     .videos .container::before 
         display: none
     .logo
@@ -708,7 +710,12 @@ body
         font-size: 17px
     .commints .container
         display: block
-    #vk_comments,
+    .fb
+        margin: 10px 29px !important
+    .vk_comments
+        margin: 10px 0 !important
+    #vk_comments
+        max-width: 300px;
     .fb-comments, 
     .fb-comments span,
     .fb-comments span iframe 
