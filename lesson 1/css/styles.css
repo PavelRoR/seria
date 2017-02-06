@@ -1,91 +1,91 @@
 @charset 'UTF-8';
-html,
-body,
-div,
-span,
+a,
+abbr,
+acronym,
+address,
 applet,
-object,
-iframe,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
+header,
+hgroup,
+html,
+i,
+iframe,
 img,
 ins,
 kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
 q,
+ruby,
 s,
 samp,
+section,
 small,
+span,
 strike,
 strong,
 sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
 summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
 time,
-mark,
-audio,
+tr,
+tt,
+u,
+ul,
+var,
 video {
     font: inherit;
     font-size: 100%;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
-    border: 0;
+    border: 0
 }
 
 article,
@@ -99,123 +99,86 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+    display: block
 }
 
 body {
     font-family: 'Open Sans', san-serif;
     line-height: 1;
+    -webkit-text-size-adjust: none
 }
 
 ol,
 ul {
-    list-style: none;
+    list-style: none
 }
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-body {
-    -webkit-text-size-adjust: none;
-}
-
-
-/* Box Model */
 
 *,
-*:before,
-*:after {
+:after,
+:before {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
-
-*:before,
-*:after {
-    content: '';
+    padding: 0
 }
 
 .container {
-    width: 960px;
-    max-width: 960px;
+    max-width: 71%;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: auto
 }
 
 .clf {
-    clear: both;
+    clear: both
 }
-
-
-/* Стили шапки  */
 
 .header {
     width: 100%;
-    min-height: 100px;
-    background-color: #000862;
+    height: 100px;
+    background-color: #000862
 }
 
-.logo {
+
+
+.header .container {
+    height: inherit;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-box;
     display: flex;
-    float: left;
-    width: 180px;
-    height: 100px;
     -webkit-display: flex;
     -moz-display: flex;
     -ms-display: flex;
     -o-display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
-.name {
-    float: left;
+.jumbo iframe,
+.subscr,
+.subscr:focus .full {
+    display: block
+}
+
+
+.header img {
+    width: 180px;
+    height: 67px;
+}
+.header .container h1 {
     width: 78%;
-    margin-left: 20px;
-    padding-top: 17px;
-}
-
-.name h1,
-.name h2 {
     font-family: 'Russo One', sans-serif;
     color: #fff;
-}
-
-.name h1 {
     font-size: 33px;
-    position: relative;
-    padding-bottom: 5px;
+    margin-left: 20px;
 }
-
-
-/* Стили основного блока  */
 
 .main_content {
     position: relative;
@@ -225,62 +188,65 @@ body {
     height: auto;
     padding-top: 10px;
     padding-bottom: 90px;
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/1_1.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 320px
 }
 
 .height_up {
     width: 100%;
-    height: 100px;
+    height: 100px
 }
 
 .jumbo {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 20px auto 45px;
     padding: 20px;
     border: 20px solid rgba(255, 255, 255, .5);
     background-color: rgba(255, 255, 255, .92);
-    background-clip: padding-box;
+    background-clip: padding-box
+}
+
+.jumbo h3,
+.jumbo h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center
 }
 
 .jumbo h3 {
     font-size: 30px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    font-weight: 700
 }
 
 .jumbo h4 {
     font-size: 24px;
-    font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    font-weight: bolder
 }
 
 .jumbo iframe {
     position: relative;
-    display: block;
-    width: 560px;
-    height: 350px;
+    width: 100%;
+    min-width: 190px;
+    max-width: 760px;
+    height: 420px;
     margin: 20px auto;
     border: 3px solid #fff;
-    box-shadow: 0 0 0 1px #000, 0 5px 10px grey;
+    box-shadow: 0 0 0 1px #000, 0 5px 10px grey
 }
 
-
-/* Стили ряда видосов */
-
+.commints .container,
 .videos .container {
-    position: relative;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
-    display: -webkit-box;
+    display: -webkit-box
+}
+
+.videos .container {
+    position: relative;
     display: flex;
     height: 107px;
     padding-top: 5px;
@@ -297,6 +263,11 @@ body {
     -webkit-perspective: 150px;
     -ms-perspective: 150px;
     perspective: 150px;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .videos .container img {
@@ -307,7 +278,7 @@ body {
     margin: 10px 20px;
     cursor: pointer;
     border: 2px solid #fff;
-    outline: 1px solid #000;
+    outline: #000 solid 1px
 }
 
 .videos .container img:after {
@@ -315,13 +286,13 @@ body {
     width: inherit;
     height: inherit;
     content: 'Урок пока недоступен';
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .85)
 }
 
 .videos .container figure {
     position: relative;
     -webkit-transition: all .5s ease-in;
-    transition: all .5s ease-in;
+    transition: all .5s ease-in
 }
 
 .videos .container figure:after {
@@ -333,57 +304,51 @@ body {
     border-radius: 100%;
     background-color: #aaa;
     box-shadow: 0 0 5px 5px #aaa;
+    content: '';
 }
 
 .videos .container figcaption {
     position: relative;
     top: -8px;
-    text-align: center;
+    text-align: center
 }
 
 .videos .container:before {
+    content: '';
     position: absolute;
     z-index: -1;
     top: 90px;
     left: 0;
-    left: 0;
-    width: inherit;
+    width: 100%;
     height: 70px;
     -webkit-transform: rotateX(5deg);
     transform: rotateX(5deg);
     border-radius: 5px;
-    background-image: url(../img/7.png);
+    background-image: url(../img/7_1.jpg);
     background-repeat: repeat-x;
     background-position: center;
     background-size: 85px 69px;
-    box-shadow: 0 5px 4px grey, 2px 5px 4px grey, -2px 5px 4px grey;
+    box-shadow: 0 5px 4px grey, 2px 5px 4px grey, -2px 5px 4px grey
 }
 
-
-/* Стили комментов */
-
 .commints {
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .commints h3 {
     font-size: 28px;
-    font-weight: bold;
-    width: 960px;
+    font-weight: 700;
+    max-width: 71%;
     margin: 20px auto -1px;
     padding: 10px;
     text-align: center;
     color: #fff;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    background-color: #ccc;
+    background-color: #ccc
 }
 
 .commints .container {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
     display: flex;
     border: 1px dashed #ccc;
     border-bottom-right-radius: 5px;
@@ -399,31 +364,33 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     -ms-align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.vk,
-.fb {
-    margin: 10px 30px;
+.fb,
+.vk {
+    margin: 10px 30px
 }
 
 #vk_comments,
 .fb-comments,
 .fb-comments span,
 .fb-comments span iframe {
-    width: 400px !important;
+    width: 400px!important
 }
-
-
-/* Стили подвала */
 
 .footer {
     width: 100%;
     height: 50px;
-    background-color: #2a2a2c;
+    background-color: #2a2a2c
 }
 
 .footer .container {
-    height: inherit;
+    height: inherit
 }
 
 .footer .container p {
@@ -450,15 +417,20 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .footer .container p a {
     text-decoration: none;
-    color: #1c9eab;
+    color: #1c9eab
 }
 
 .footer .container p a:hover {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .full {
@@ -470,10 +442,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .8);
+
 }
-
-
-/* стили модального окна */
 
 .popup {
     position: relative;
@@ -482,16 +452,17 @@ body {
     margin: 100px auto 0;
     padding: 30px 0;
     border: 3px solid rgba(0, 0, 0, .6);
-    background-color: #fff;
+    background-color: #fff
 }
 
-
-/* формируем кнопку закрытия */
+.close,
+.darked {
+    position: absolute
+}
 
 .close {
-    font: 13px/20px 'Tahoma', Arial, sans-serif;
-    font-weight: bold;
-    position: absolute;
+    font: 13px/20px Tahoma, Arial, sans-serif;
+    font-weight: 700;
     top: -10px;
     right: -10px;
     width: 20px;
@@ -504,45 +475,37 @@ body {
     border: 2px solid #ccc;
     border-radius: 15px;
     background-color: rgba(61, 61, 61, .8);
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000
 }
 
 .close:before {
     font-size: 12px;
     content: 'X';
     color: rgba(255, 255, 255, .9);
-    text-shadow: 0 -1px rgba(0, 0, 0, .9);
+    text-shadow: 0 -1px rgba(0, 0, 0, .9)
 }
 
 .close:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    background-color: rgba(252, 20, 0, .8);
+    background-color: rgba(252, 20, 0, .8)
 }
 
 .subscr {
-    font-weight: bold;
+    font-weight: 700;
     z-index: 9999999999999;
-    display: block;
     width: 290px;
     margin: 10px auto;
     padding: 15px 10px;
     cursor: pointer;
     text-align: center;
-    text-decoration: navajowhite;
+    text-decoration: #ffdead;
     color: #fff;
     border: none;
     border-radius: 3px;
     background-color: #de0000;
-    box-shadow: 0 4px 0 #af0000;
-}
-
-.subscr:focus .full {
-    display: block;
+    box-shadow: 0 4px 0 #af0000
 }
 
 .darked {
-    position: absolute;
     top: 10px;
     left: 19px;
     display: -moz-flex;
@@ -568,276 +531,61 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-
-/* Экран 768px */
-
-@media screen and (max-width: 768px) {
-    .container {
-        width: 748px;
-    }
-    .name {
-        width: 72%;
-        padding-top: 28px;
-    }
-    .name h1 {
-        font-size: 24px;
-    }
-    .jumbo {
-        width: 80%;
-    }
-    .jumbo iframe {
-        width: 80%;
-        height: 270px;
-    }
-    .videos .container::before {
-        left: 22px;
-        width: 700px;
-    }
-    .videos .container img {
-        width: 150px;
-    }
-    .darked {
-        width: 150px;
-        text-align: center;
-    }
-    .videos .container figure::after {
-        width: 155px;
-    }
-    .commints h3 {
-        font-size: 25px;
-        width: 748px;
-    }
-    .commints {
-        position: relative;
-        left: -5px;
-    }
-    #vk_comments,
-    .fb-comments,
-    .fb-comments span,
-    .fb-comments span iframe {
-        width: 320px !important;
-    }
+#simplemodal-overlay {
+    cursor: wait;
+    background-color: #000
 }
 
-
-/* Эран 640px */
-
-@media screen and (max-width: 640px) {
-    .container,
-    .commints h3 {
-        width: 620px;
-    }
-    .jumbo h3 {
-        font-size: 25px;
-    }
-    .jumbo h4 {
-        font-size: 22px;
-    }
-    .name {
-        width: 72%;
-        padding-top: 28px;
-    }
-    .name h1 {
-        font-size: 19px;
-    }
-    .jumbo iframe {
-        width: 80%;
-        height: 270px;
-    }
-    .videos .container::before {
-        left: 22px;
-        width: 570px;
-    }
-    .videos .container img,
-    .logo {
-        width: 150px;
-    }
-    .darked {
-        width: 150px;
-        text-align: center;
-    }
-    .vk,
-    .fb {
-        margin: 10px 0;
-    }
-    #vk_comments,
-    .fb-comments,
-    .fb-comments span,
-    .fb-comments span iframe {
-        width: 300px !important;
-    }
-    .popup {
-        margin-top: 10px;
-    }
+#simplemodal-container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    border: 10px solid rgba(255, 255, 255, .4);
+    -moz-border-radius: 5px;
+    background-color: #fff;
+    background-clip: padding-box;
+    top: 70px!important
 }
 
-
-/* Эран 480px */
-
-@media screen and (max-width: 480px) {
-    .container,
-    .commints h3 {
-        width: 460px;
-    }
-    .jumbo {
-        margin-bottom: 15px;
-    }
-    .jumbo h3 {
-        font-size: 22px;
-    }
-    .jumbo h4 {
-        font-size: 19px;
-    }
-    .name {
-        width: 66%;
-        padding-top: 23px;
-    }
-    .name h1 {
-        font-size: 18px;
-    }
-    .jumbo iframe {
-        width: 90%;
-        height: 170px;
-    }
-    .videos .container::before {
-        left: 7px;
-        width: 440px;
-    }
-    .videos .container img,
-    .logo {
-        width: 130px;
-    }
-    .videos .container img {
-        margin: 10px 7px;
-    }
-    .videos .container figure::after {
-        left: 7px;
-        width: 131px;
-    }
-    .darked {
-        left: 6px;
-        width: 130px;
-    }
-    .commints .container {
-        display: block;
-    }
-    .fb {
-        margin: 10px 29px;
-    }
-    #vk_comments,
-    .fb-comments,
-    .fb-comments span,
-    .fb-comments span iframe {
-        width: 400px !important;
-        margin: 0 auto !important;
-    }
-    .footer .container p {
-        font-size: 12px;
-    }
+#simplemodal-container a.modalCloseImg {
+    position: absolute;
+    z-index: 3200;
+    top: 5px;
+    right: 8px;
+    display: inline;
+    width: 25px;
+    height: 29px;
+    cursor: pointer;
+    background: url(../img/x.png) no-repeat
 }
 
+#simplemodal-container #basicModalContent {
+    padding: 8px
+}
 
-/* Эран 360px */
+#exit_content {
+    display: none;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center
+}
 
-@media screen and (max-width: 360px) {
-    .main_content {
-        padding-bottom: 10px;
-    }
-    .container,
-    .commints h3 {
-        width: 300px;
-    }
-    .logo {
-        float: none;
-        width: 200px;
-        height: 60px;
-        margin: 0 auto;
-        padding-top: 10px;
-    }
-    .jumbo {
-        width: 90%;
-    }
-    .jumbo h3 {
-        font-size: 22px;
-    }
-    .jumbo h4 {
-        font-size: 19px;
-    }
-    .name {
-        float: none;
-        width: 100%;
-        margin-left: 0;
-        padding: 10px 0;
-        text-align: center;
-    }
-    .name h1 {
-        font-size: 18px;
-    }
-    .jumbo iframe {
-        width: 100%;
-        height: 170px;
-    }
-    .subscr {
-        font-size: .6rem;
-        line-height: 1.5;
-        width: 90%;
-    }
-    .popup {
-        width: 275px;
-    }
-    .videos .container {
-        display: block;
-        height: auto;
-    }
-    .videos .container::before {
-        display: none;
-    }
-    .logo {
-        width: 130px;
-    }
-    .videos .container figure {
-        margin-bottom: 30px;
-    }
-    .videos .container img {
-        display: block;
-        width: 60%;
-        height: auto;
-        margin: 10px auto;
-    }
-    .videos .container figure::after {
-        left: 60px;
-        width: 60%;
-    }
-    .darked {
-        top: -1px;
-        left: 59px;
-        width: 182px;
-        height: 102px;
-    }
-    .commints h3 {
-        font-size: 17px;
-    }
-    .commints .container {
-        display: block;
-    }
-    .fb {
-        margin: 10px 29px !important;
-    }
-    .vk_comments {
-        margin: 10px 0 !important;
-    }
-    #vk_comments {
-        max-width: 300px;
-    }
-    .fb-comments,
-    .fb-comments span,
-    .fb-comments span iframe {
-        width: 240px !important;
-        margin: 0 auto !important;
-    }
-    .footer .container p {
-        font-size: 9px;
-    }
+#exit_content h4 {
+    font-weight: 700;
+    display: inline-block;
+    margin: -10px auto 10px;
+    color: #000862;
+    border-bottom: 1px dashed
+}
+
+#vk_groups {
+    overflow: hidden!important;
 }

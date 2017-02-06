@@ -1,0 +1,316 @@
+@media screen and (max-width: 1279px),
+ (min-width: 1280px) {
+    .container,
+    .container_2 {
+        max-width: 960px;
+    }
+    .jumbo {
+        width: inherit;
+    }
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .container,
+    .container_2 {
+        max-width: 90%;
+    }
+
+    .header .container h1 {
+        font-size: 28px;
+        width: 76%;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .header .container h1 {
+        font-size: 24px
+    }
+    .jumbo {
+        width: 100%
+    }
+    .jumbo iframe {
+        width: 80%;
+        height: 270px
+    }
+    .videos .container::before {
+        left: 22px;
+        width: 700px
+    }
+    .darked,
+    .videos .container img {
+        width: 150px
+    }
+    .darked {
+        text-align: center
+    }
+    .videos .container figure::after {
+        width: 155px
+    }
+    .commints h3 {
+        font-size: 25px;
+        width: 748px
+    }
+    .commints {
+        position: relative;
+        left: -5px
+    }
+    #vk_comments,
+    .fb-comments,
+    .fb-comments span,
+    .fb-comments span iframe {
+        width: 320px!important
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .header {
+        height: auto;
+    }
+    .header .container {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+    }
+    .header img {
+        margin: 15px auto;
+    }
+    .header .container h1 {
+        text-align: center;
+        margin-bottom: 15px;
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .jumbo h3 {
+        font-size: 25px
+    }
+    .jumbo h4 {
+        font-size: 22px
+    }
+    .name {
+        width: 72%;
+        padding-top: 28px
+    }
+    .name h1 {
+        font-size: 19px
+    }
+    .jumbo iframe {
+        width: 80%;
+        height: 270px
+    }
+    .videos .container::before {
+        left: 22px;
+        width: 570px
+    }
+    .darked,
+    .logo,
+    .videos .container img {
+        width: 150px
+    }
+    .darked {
+        text-align: center
+    }
+    .fb,
+    .vk {
+        margin: 10px 0
+    }
+    #vk_comments,
+    .fb-comments,
+    .fb-comments span,
+    .fb-comments span iframe {
+        width: 300px!important
+    }
+    .popup {
+        margin-top: 10px
+    }
+}
+
+@media screen and (max-width:572px) {
+
+    .header img {
+        max-width: 20%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .header .container h1 {
+        font-size: 18px;
+    }
+
+    .jumbo {
+        margin-bottom: 15px
+    }
+    .jumbo h3 {
+        font-size: 22px
+    }
+    .jumbo h4 {
+        font-size: 19px
+    }
+    .name {
+        width: 66%;
+        padding-top: 23px
+    }
+    .name h1 {
+        font-size: 18px
+    }
+    .jumbo iframe {
+        width: 90%;
+        height: 170px
+    }
+    .videos .container::before {
+        left: 7px;
+        width: 440px
+    }
+    .logo,
+    .videos .container img {
+        width: 130px
+    }
+    .videos .container img {
+        margin: 10px 7px
+    }
+    .videos .container figure::after {
+        left: 7px;
+        width: 131px
+    }
+    .darked {
+        left: 6px;
+        width: 130px
+    }
+    .commints .container {
+        display: block
+    }
+    .fb {
+        margin: 10px 29px
+    }
+    #vk_comments,
+    .fb-comments,
+    .fb-comments span,
+    .fb-comments span iframe {
+        width: 400px!important;
+        margin: 0 auto!important
+    }
+    .footer .container p {
+        font-size: 12px
+    }
+}
+@media screen and (max-width:431px) {
+
+    .header img {
+        min-width: 100px;
+    }
+    .header .container h1 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:360px) {
+    .main_content {
+        padding-bottom: 10px
+    }
+    .logo {
+        float: none;
+        height: 60px;
+        margin: 0 auto;
+        padding-top: 10px
+    }
+    .jumbo {
+        width: 90%
+    }
+    .jumbo h3 {
+        font-size: 22px
+    }
+    .jumbo h4 {
+        font-size: 19px
+    }
+    .name {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 10px 0;
+        text-align: center
+    }
+    .name h1 {
+        font-size: 18px
+    }
+    .jumbo iframe {
+        width: 100%;
+        height: 170px
+    }
+    .subscr {
+        font-size: .6rem;
+        line-height: 1.5;
+        width: 90%
+    }
+    .popup {
+        width: 275px
+    }
+    .videos .container {
+        display: block;
+        height: auto
+    }
+    .videos .container::before {
+        display: none
+    }
+    .logo {
+        width: 130px
+    }
+    .videos .container figure {
+        margin-bottom: 30px
+    }
+    .videos .container img {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 10px auto
+    }
+    .videos .container figure::after {
+        left: 60px;
+        width: 60%
+    }
+    .darked {
+        top: -1px;
+        left: 59px;
+        width: 182px;
+        height: 102px
+    }
+    .commints h3 {
+        font-size: 17px
+    }
+    .commints .container {
+        display: block
+    }
+    .fb {
+        margin: 10px 29px!important
+    }
+    .vk_comments {
+        margin: 10px 0!important
+    }
+    #vk_comments {
+        max-width: 300px
+    }
+    .fb-comments,
+    .fb-comments span,
+    .fb-comments span iframe {
+        width: 240px!important;
+        margin: 0 auto!important
+    }
+    .footer .container p {
+        font-size: 9px
+    }
+}
+
+
+@media screen and (max-width:326px) {
+    .header .container h1 {
+        font-size: 14px;
+    }
+}
